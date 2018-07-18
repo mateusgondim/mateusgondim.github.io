@@ -1,0 +1,85 @@
+#-------------------------------
+# General Site Settings
+
+menu:
+- {name: 'Projects', url: ''}
+- {name: 'Blog', url: 'https://medium.com/@mateusgondimlima'}
+- {name: 'About', url: 'pages/about.html'}
+- {name: 'Contact', url: 'pages/contact.html'}
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Personal portfolio powered by Jekyll and GitHub Pages '
+  rel-author: 'https://plus.google.com/u/0/#'
+  rel-publisher: 'https://plus.google.com/u/0/#'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+google-analytics-ua: 'UA-112060364-3'
+
+#-------------------------------
+# Disqus Section
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: 'thathungrymind'
+
+#-------------------------------
+# About Section
+
+about: >
+  ## I Make Games
+    Hi! My name is Mateus Gondim Lima, and i'm a game programmer. 
+    I am currently searching for job opportunities and can relocate on purpose.
+    In this website you can find all of my finished projects, and the ones i'm currently working on, a link
+    to my blog, where i write about game programming in general, my resume, and how to contact me.
+  
+  # Technical Skills
+    - Gameplay Programming.
+    - Computer Graphics.
+    - 3D Math, Linear Algebra.
+    - C/C++, C#, Lua, HLSL, GLSL, Haskell.
+    - Unity3D, Unreal Engine 4.
+
+  # Education
+    I have acquired a bachelor's degree in Computer Science from [Universidade Federal da Bahia](http://www.ufba.br/) (2017).
+  
+  # Resume
+    [resume.pdf](../assets/pdf/mateusgondim_resume.pdf)
+
+contact: >
+  ## Contact
+    You may contact me through my email (mateusgondimlima@gmail.com) and [linkedin](https://linkedin.com/in/mateus-gondim-lima-146451145).
+
+#-------------------------------
+# Work Section
+
+projects:
+- {name: '2D Platformer game(untitled)', folder: '2d_game', file: 'projects/2d_game.html'}
+- {name: 'T2DEngine', folder: 't2dengine', file: 'projects/t2dengine.html'}
+#- {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
+#- {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
+#- {name: 'Project Five', folder: 'proj-5', file: 'projects/proj-5.html'}
+
+#-------------------------------
+# Contact Section
+
+social:
+#- {icon: 'twitter', link: '#'}
+#- {icon: 'instagram', link: '#'}
+- {icon: 'github', link: 'https://github.com/mateusgondim'}
+- {icon: 'linkedin', link: 'https://linkedin.com/in/mateus-gondim-lima-146451145'}
+#- {icon: 'envelope', link: 'mailto:#'}
+- {icon: 'medium', link: 'https://medium.com/@mateusgondimlima'}
+# social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'

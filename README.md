@@ -1,248 +1,243 @@
-# [Neo-HPSTR Jekyll Theme](http://aronbordin.com/neo-hpstr-jekyll-theme)
-[![Gem Version](https://badge.fury.io/rb/neo-hpstr-jekyll-theme.svg)](https://badge.fury.io/rb/neo-hpstr-jekyll-theme)
+# Portfolio Jekyll Theme
 
-Neo-HPSTR Jekyll is a responsive and modern blog template.
+This is a Jekyll theme built using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). The purpose of this theme is to provide a clean and simple website for your portfolio. Emphasis is placed on your projects, which are shown front and center on the home page.
 
-![Preview](http://aron-bordin.github.io/neo-hpstr-jekyll-theme/images/neo-hpstr-jekyll-theme-preview.png)
+Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in [the demo site](https://lenpaul.github.io/portfolio-jekyll-theme/).
 
-Demo: http://aronbordin.com/neo-hpstr-jekyll-theme
+![alt-text](https://cloud.githubusercontent.com/assets/8409329/26227987/f2583642-3c03-11e7-81c4-28a9353c91ae.jpg)
 
+## Notable features
 
-## Contents
+* Compatible with GitHub Pages.
 
-- [Installation](#installation)
-- [Features](#features)
-- [Configuration](#configuration)
-- [Questions](#questions)
-- [Contributing](#contributing)
-- [Development](#development)
-- [License](#license)
+* Support for Jekyll's built-in Sass/SCSS preprocessor and data files for making customizing easier.
+
+* [Google Analytics](https://www.google.com/analytics/) support.
+
+* Commenting support powered by [Disqus](https://disqus.com/).
+
+* Optimized for search engines.
+
+* LaTeX support through [MathJax](https://www.mathjax.org/).
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+   1. [What is Jekyll](#what-is-jekyll)
+   2. [Never Used Jeykll Before?](#never-used-jekyll-before)
+2. [Installation](#installation)
+   1. [GitHub Pages Installation](#github-pages-installation)
+   2. [Local Installation](#local-installation)
+   3. [Directory Structure](#directory-structure)
+   4. [Starting From Scratch](#starting-from-scratch)
+3. [Configuration](#configuration)
+   1. [Sample Posts](#sample-posts)
+   2. [Site Variables](#site-variables)
+   3. [Adding Menu Pages](#adding-menu-pages)
+   4. [Posts](#posts)
+   5. [Layouts](#layouts)
+   6. [YAML Front Block Matter](#yaml-front-block-matter)
+4. [Features](#features)
+   1. [Design Considerations](#design-considerations)
+   2. [Disqus](#disqus)
+   3. [Google Analytics](#google-analytics)
+   4. [RSS Feeds](#rss-feeds)
+   5. [Social Media Icons](#social-media-icons)
+   6. [MathJax](#mathjax)
+   7. [Syntax Highlighting](#syntax-highlighting)
+   8. [Markdown](#markdown)
+5. [Everything Else](#everything-else)
+6. [Contributing](#Contributing)
+7. [Questions?](#questions)
+8. [Credits](#credits)
+9. [License](#license)
+
+## Introduction
+
+Portfolio Jekyll Theme is a Jekyll theme that was built to be 100% compatible with [GitHub Pages](https://pages.github.com/). If you are unfamiliar with GitHub Pages, you can check out [their documentation](https://help.github.com/categories/github-pages-basics/) for more information. [Jonathan McGlone's guide](http://jmcglone.com/guides/github-pages/) on creating and hosting a personal site on GitHub is also a good resource.
+
+### What is Jekyll?
+
+Jekyll is a simple, blog-aware, static site generator for personal, project, or organization sites. Basically, Jekyll takes your page content along with template files and produces a complete website. For more information, visit the [official Jekyll site](https://jekyllrb.com/docs/home/) for their documentation.
+
+### Never Used Jekyll Before?
+
+The beauty of hosting your website on GitHub is that you don't have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the `_posts` directory and edit the `_config.yml` file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS).
 
 ## Installation
 
-### As a Boilerplate / Fork
+### GitHub Pages Installation
 
-1. [Fork the repo](https://github.com/aron-bordin/neo-hpstr-jekyll-theme)
-2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
-3. Delete the `demo/` folder and `screenshot.png` files
-4. Install bundler with `$ gem install bundler`
-5. Install gems with `$ bundle install`
-6. Run Jekyll with `$ bundle exec jekyll serve --watch`
-7. Begin hacking for your project
+To start using Portfolio Jekyll Theme right away with GitHub Pages, [fork the Portfolio Jekyll Theme repository on GitHub](https://github.com/LeNPaul/portfolio-jekyll-theme/fork). From there, you can rename your repository to 'USERNAME.github.io', where 'USERNAME' is your GitHub username, and edit the `settings.yml` file in the `_data` folder to your liking. Ensure that you have a branch named `gh-pages`. Your website should be ready immediately at 'http://USERNAME.github.io'. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
 
-(If you are serving your blog at github, make sure to enale the gh-pages at yout repo settings)
+Head over to the `_posts` directory to view all the posts that are currently on the website, and to see examples of what post files generally look like. You can simply just duplicate the template post and start adding your own content.
 
-### As a Jekyll >= 3.3 theme gem
+### Local Installation
 
-If you already have a jekyll project, jump to the instructions bellow. Otherwise, follow these steps:
+For a full local installation of Portfolio Jekyll Theme, [download your own copy of Portfolio Jekyll Theme](https://github.com/LeNPaul/portfolio-jekyll-theme/archive/gh-pages.zip) and unzip it into it's own directory. From there, open up your favorite command line tool, enter `bundle install`, and then enter `jekyll serve`. Your site should be up and running locally at [http://localhost:4000](http://localhost:4000).
 
-1. Install jekyll and bundler with `$ gem install jekyll bundler`.
-2. Create your website `jekyll new my-awesome-blog`.
-3. `cd my-awesome-blog`
+### Directory Structure
 
-Inside the project folder, install the theme as follows:
+If you are familiar with Jekyll, then the Portfolio Jekyll Theme directory structure shouldn't be too difficult to navigate. The following some highlights of the differences you might notice between the default directory structure. More information on what these folders and files do can be found in the [Jekyll documentation site](https://jekyllrb.com/docs/structure/).
 
-1. Download the starter `/demo` content, [quick download link](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/aron-bordin/neo-hpstr-jekyll-theme/tree/master/demo) and extract the content to the blog folter.
-2. Install bundler with `$ gem install bundler`
-3. Install gems with `$ bundle install`
-4. Run Jekyll with `$ bundle exec jekyll serve --watch`
-5. Begin hacking for your project
+```bash
+Portfolio Jekyll Theme/
+├── _data                      # Data files
+|  └── settings.yml            # Theme settings and custom text
+├── _includes                  # Theme includes
+├── _layouts                   # Theme layouts (see below for details)
+├── _posts                     # Where all your posts will go
+├── assets                     # Style sheets and images are found here
+|  ├── css                     # Style sheets go here
+|  |  └── all.sass             # Main SASS file
+|  └── img                     # Images go here
+├── pages                      # Menu pages
+├── projects                   # Project pages
+├── _config.yml                # Site build settings
+├── Gemfile                    # Ruby Gemfile for managing Jekyll plugins
+└── index.md                   # Home page
+```
 
+### Starting From Scratch
 
-### Boilerplate & Theme differences
-
-The boilerplate kit is better for more drastic hacking and changes, a project that's quite different to any other and needs a lot of custom work done. Additionally you'll only be able to use this method if you want to host it on GitHub Pages, as [themes can't be submitted](https://pages.github.com/themes/)... yet.
-
-Using the theme will allow you to receive updates made and will be more programmatic. To make your own changes you'll need to overwrite the files with your own.
-
-## Features
-
-* Modern design.
-* Responsive templates for post, page, and home `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrades in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.
-* Sweet topbar animated menu with support for drop-downs.
-* Optional [Disqus](http://disqus.com) comments and social sharing links.
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page](x) to get you started.
-* [Syntax highlighting](x) to make your code examples look snazzy
-* Author panel, with social links
+To completely start from scratch, simply delete all the files in the `_posts`, `assets/img`, and `menu` folder, and add your own content. You may also replace the `README.md` file with your own README. Everything in the `_data` folder and `_config.yml` file can be edited to suit your needs. You may also change the `favicon.ico` file to your own favicon.
 
 ## Configuration
 
-Here are some tips on how to customize your blog theme. If you have questions, just open a new issue :)
+### Sample Posts
 
-### Project tree
+Visit the [the demo site](https://lenpaul.github.io/portfolio-jekyll-theme/) to find sample posts that show what different types of text formatting look like. You can find these posts in the `_posts` folder, which show what the best practices for setting up your own site are.
 
-    ├── about.md                    # about page, /about/
-    ├── assets/                     # css, js, fonts, etc
-    ├── categories.html
-    ├── _config.yml                 # your blog configuration
-    ├── demo/                       # folder with quick start content
-    ├── feed.xml                    # rss feed generator
-    ├── Gemfile                     # project dependencies
-    ├── Gruntfile.js                # some grunt tasks, useful for theme developing
-    ├── images/                     # blog images
-    ├── _includes
-    │   ├── author.html             # author banner (at the end of post)
-    │   ├── browser-upgrade.html    # ask for update
-    │   ├── disqus_comments.html    # comments
-    │   ├── feed-footer.html        # feed footers
-    │   ├── footer.html             # page footer
-    │   ├── gallery                 # used for displaying images in a page
-    │   ├── header.html             # header menu
-    │   ├── head.html               # site head, with css includes and metadata
-    │   ├── icons.html              # site icons
-    │   ├── pagination.html         # pagination
-    │   ├── read-more.html          # read-more banner, to recommend posts
-    │   ├── scripts.html            # js scripts
-    │   └── social-share.html       # floating social share integration
-    ├── index.html                  # homepage
-    ├── _layouts                    # blog layouts
-    │   ├── dark-post.html
-    │   ├── home.html
-    │   ├── page.html
-    │   └── post.html
-    ├── LICENSE.txt
-    ├── neo-hpstr-jekyll-theme.gemspec
-    ├── package.json
-    ├── _posts                     # sample posts
-    │   ├── 2016-11-26-sample-post-images.md
-    │   ├── 2016-11-27-video-post.md
-    │   ├── 2016-11-28-sample-link-post.md
-    │   ├── 2016-11-29-background-image.md
-    │   ├── 2016-11-30-dark-post.md
-    │   ├── 2016-12-01-code-highlighting-post.md
-    │   └── 2016-12-02-sample-post.md
-    ├── posts.html                 # page for listing posts
-    ├── README.md
-    ├── _sass                      # blog style
-    ├── screenshoot.png
-    ├── search.html                # search page
-    ├── search.json
-    ├── _site/
-    ├── tags.html                  # tags page
+### Site Variables
 
+To change site build settings, edit the `_config.yml` file found in the root of your repository, which you can tweak however you like. More information on configuration settings and plugins can be found on [the Jekyll documentation site](https://jekyllrb.com/docs/configuration/). This is also where you will be able to customize the title, description, and the author/owner of your site.
 
-### Disqus Comments
+If you are hosting your site on GitHub Pages, then committing a change to the `_config.yml` file will force a rebuild of your site with Jekyll. Any changes made should be viewable soon after. If you are hosting your site locally, then you must run `jekyll serve` again for the changes to take place.
 
-Create a [Disqus](http://disqus.com) account and change `disqus_shortname` in `_config.yml` to the Disqus *shortname* you just setup. By default comments appear on all post and pages if you assigned a shortname. To disable commenting on a post or page, add the following to its YAML Front Matter:
+In the `settings.yml` file found in the `_data` folder, you will be able to customize your site settings, such as setting Disqus comments, Google Analytics, what shows up in your menu, and social media information.
 
-    comments: false
+### Adding Menu and Project Pages
 
-### Social Share Links
+The menu pages are found in the `menu` folder in the root directory, and can be added to your menu in the `settings.yml` file. Similarly, the project pages are found in the `projects` folder in the root directory, and can be added to your site in the `settings.yml` file. The images for your portfolio projects are stored in the `assets/img/projects/proj-n` folder, and should be named `thumb.jpg`.
 
-To disable Facebook, Twitter, and Google+ share links on a post or page, add the following to its front matter:
+### Posts
 
-    share: false
+You will find example posts in your `_posts` directory. Go ahead and edit any post and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-### Floating Social Share Links
+To add new posts, simply add a file in the `_posts` directory that follows the convention of `YYYY-MM-DD-name-of-post.md` and includes the necessary front matter. Take a look at any sample post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts to migrate to Portfolio Jekyll Theme.
 
-To enable floating share links on the left of the screen, edit it on `_config.yml`:
+### Layouts
 
-    float_share: true
+There are two main layout options that are included with Portfolio Jekyll Theme: post and page. Layouts are specified through the [YAML front block matter](https://jekyllrb.com/docs/frontmatter/). Any file that contains a YAML front block matter will be processed by Jekyll. For example:
 
-### Owner/Author Information
+```
+---
+layout: post
+title: "Example Post"
+---
+```
 
-Change your name, and avatar photo (200x200 pixels or larger), email, and social networking URLs. If you want to link to an external image on Gravatar or something similar you'll need to edit the path in `_includes/author.html` since it assumes it is hosted on your site.
+Examples of what posts looks like can be found in the `_posts` directory, which includes this post you are reading right now. Posts are the basic blog post layout, which includes a header image, post content, author name, date published, social media sharing links, and related posts.
 
-### Google Analytics and Webmaster Tools
+Pages are essentially the post layout without any of the extra features of the posts layout. An example of what pages look like can be found at the [About](https://lenpaul.github.io/portfolio-jekyll-theme/pages/about.html) and [Contacts](https://lenpaul.github.io/portfolio-jekyll-theme/pages/contact.html).
 
-Your Google Analytics ID goes here along with meta tags for [Google Webmaster Tools](http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35179) and [Bing Webmaster Tools](https://ssl.bing.com/webmaster/configure/verify/ownershi) site verification.
+In addition to the two main layout options above, there is also a custom layout that have been created for the [home page](https://lenpaul.github.io/portfolio-jekyll-theme/). These are simply just page layouts with some [Liquid template code](https://shopify.github.io/liquid/). Check out the `index.html` file in the root directory for what the code looks like.
 
-### Top Menu - Navigation Links
+### YAML Front Block Matter
 
-To add additional links in the menu edit `_config.yml`. Use the following format to set the URL and title for as many links as you'd like. *External links will open in a new window..* You can create a sub-category using the `submenu` item. Also, you can list your post categories setting the `type: 'categories'`
+The recommended YAML front block is:
 
+```
+---
+layout:
+title:
+---
+```
 
-    menu:
-      - title: 'Home'
-        url: '/'
-      - title: 'Fork'
-        url: 'http://github.com/aron-bordin/neo-hpstr-jekyll-theme'
-      - title: 'Tags'
-        url: '/tags'
-      - title: 'Categories'
-        url: '/categories'
-        type: 'categories'
-      - title: 'Favorites'
-        url: '#'
-        submenu:
-          - title: 'highlighter'
-            url: '/code-highlighting-post/'
-          - title: 'intro'
-            url: '/sample-post/'
+`layout` specifies which layout to use, and `title` is the page or post title. Have a look at some posts in the `_posts` directory to see how these variables are set.
 
-### Adding New Content with Octopress
+## Features
 
-While completely optional, I've included Octopress and some starter templates to automate the creation of new posts and pages. To take advantage of it start by installing the [Octopress](https://github.com/octopress/octopress) gem if it isn't already.
+### Design Considerations
 
-    $ gem install octopress
+Portfolio Jekyll Theme was designed to be a minimalist theme in order for the focus to remain on your content. For example, links are signified mainly through coloured font, in order to maximize the perceived affordance of clickability (I originally just wanted to make the links a darker shade of grey).
 
-#### New Post
+### Disqus
 
-Default command
+Portfolio Jekyll Theme supports comments at the end of posts through [Disqus](https://disqus.com/). In order to activate Disqus commenting, set `disqus.comments` to true in the `_data/settings.yml` file. If you do not have a Disqus account already, you will have to set one up, and create a profile for your website. You will be given a `disqus_shortname` that will be used to generate the appropriate comments sections for your site. More information on [how to set up Disqus](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/).
 
-    $ octopress new post "Post Title"
+### Google Analytics
 
-Default works great if you want all your posts in one directory, but if you're like me and want to group them into subfolders like `/posts`, `/portfolio`, etc. Then this is the command for you. By specifying the DIR it will create a new post in that folder and populate the `categories:` YAML with the same value.
+It is possible to track your site statistics through [Google Analytics](https://www.google.com/analytics/). Similar to Disqus, you will have to create an account for Google Analytics, and enter the correct Google ID for your site under `google-ID` in the `settings.yml` file. More information on [how to set up Google Analytics](https://michaelsoolee.com/google-analytics-jekyll/).
 
-    $ octopress new post "New Portfolio Post Title" --dir portfolio
+### RSS Feeds
 
-#### New Page
+Atom is supported by default through [jekyll-feed](https://github.com/jekyll/jekyll-feed). With jekyll-feed, you can set configuration variables such as 'title', 'description', and 'author', in the `_config.yml` file.
 
-To create a new page use the following command.
+### Social Media Icons
 
-    $ octopress new page new-page/
+All social media icons are courtesy of [Font Awesome](http://fontawesome.io/). You can change which icons appear, as well as the account that they link to, in the `settings.yml` file in the `_data` folder.
 
-### Style Customization
+### MathJax
 
-Here you'll find some useful scss variables to help you to customize your Blog interface. All variables can be found at `_sass/_variables.scss`.
+Portfolio Jekyll Theme comes out of the box with [MathJax](https://www.mathjax.org/), which allows you to display mathematical equations in your posts through the use of [LaTeX](http://www.andy-roberts.net/writing/latex/mathematics_1).
 
-#### Top Navbar Size
+### Syntax Highlighting
 
-To change its size, edit the **`$menu-height`** value. It's recommended a value between 50px and 100px. This variable will automatically update the icon and menu size for you.
+Portfolio Jekyll Theme provides syntax highlighting through [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/). Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed. You can find the full list of supported programming languages [here](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers). Another option is to embed your code through [Gist](https://en.support.wordpress.com/gist/).
 
-#### Top Navbar Colors
+### Markdown
 
-The navbar uses two colors, the top color and overflow color. The top color represents the navbar color when the window is not scrolled and the overflow color represents the color when we have a sufficient scroll to change its color.
+As always, Jekyll offers support for GitHub Flavored Markdown, which allows you to format your posts using the [Markdown syntax](https://guides.github.com/features/mastering-markdown/). Examples of these text formatting features can be seen below. You can find this post in the `_posts` directory as well as the `README.md` file.
 
-You can change these colors using the **`$menu-top`** and **`$menu-overflow`** variable values.
+## Everything Else
 
-#### Top Navbar hover color
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-The color that you see in the item under the mouse can be changed in the **`$header-margin`** variable.
-
-### Further Customization
-
-Jekyll 2.x added support for Sass files making it much easier to modify a theme's fonts and colors. By editing values found in `_sass/variables.scss` you can fine tune the site's colors and typography.
-
-For example if you wanted a red background instead of white you'd change `$bodycolor: #fff;` to `$bodycolor: $cc0033;`.
-
-To modify the site's JavaScript files I setup a Grunt build script to lint/concatenate/minify all scripts into `scripts.min.js`. [Install Node.js](http://nodejs.org/), then [install Grunt](http://gruntjs.com/getting-started), and then finally install the dependencies for the theme contained in `package.json`:
-
-    npm install
-
-From the theme's root, use `grunt` to concatenate JavaScript files and optimize `.jpg`, `.png` and `.svg` files in the `images/` folder.
-
-You can also use `grunt dev` in combination with `bundle exec jekyll serve` to watch for updates in JS files that Grunt will then automatically re-build as you write your code, which will in turn auto-generate your Jekyll site when developing locally.
-
-## Questions?
-
-Having a problem getting something to work or want to know why I setup something in a certain way?  [File a GitHub Issue](http://github.com/aron-bordin/neo-hpstr-jekyll-theme/issues/new). And if you make something cool with this theme feel free to let me know.
+[jekyll-docs]: http://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
 
 ## Contributing
 
+If you would like to make a feature request, or report a bug or typo in the documentation, then please [submit a GitHub issue](https://github.com/LeNPaul/portfolio-jekyll-theme/issues/new). If you would like to make a contribution, then feel free to [submit a pull request](https://help.github.com/articles/about-pull-requests/) - as a bonus, I will credit all contributors below! If this is your first pull request, it may be helpful to read up on the [GitHub Flow](https://guides.github.com/introduction/flow/) first.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/aron-bordin/neo-hpstr-jekyll-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Portfolio Jekyll Theme has been designed as a base for users to customize and fit to their own unique needs. Please keep this in mind when requesting features and/or submitting pull requests. Some examples of changes that I would love to see are things that would make the site easier to use, or better ways of doing things. Please avoid changes that do not benefit the majority of users.
 
-## Development
+## Questions?
 
-To set up your environment to develop this theme, run `bundle install`.
+This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%question%about%PJT%is:%&amp;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/portfolio-jekyll-theme/issues/new).
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+## Credits
 
-When your theme is released, only the files in `_layouts`, `_includes`, and `_sass` tracked with Git will be released.
+### Creator
+
+#### Paul Le
+
+* [www.lenpaul.com](http://lenpaul.com)
+
+* [Twitter](https://twitter.com/paululele)
+
+* [GitHub](https://github.com/LeNPaul)
+
+### Contributors
+
+* Be the first to contribute!
+
+### Icons + Demo Images
+
+* [Death to Stock](https://deathtothestockphoto.com/)
+
+* [Font Awesome](http://fontawesome.io/)
+
+### Other
+
+* [Jekyll](https://jekyllrb.com/)
+
+* [Free Code Camp](https://www.freecodecamp.org)
+
+* [Khan Academy](https://www.khanacademy.org/)
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Open sourced under the [MIT license](https://github.com/LeNPaul/portfolio-jekyll-theme/blob/gh-pages/LICENSE.md).
