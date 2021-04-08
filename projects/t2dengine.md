@@ -4,7 +4,7 @@ title: 'T2DEngine'
 ---
   T2DEngine is a tile based 2d game engine. The engine is being written in C++, using GLFW/OpenGL for rendering.
   You can find more information about the engine, including the project's readme file, [here](https://github.com/mateusgondim/T2DEngine).
-  I'm also currently making 2d platformer using the engine, you can check that project [here](../projects/2d_game.html), and download a pre alpha build.
+  I'm also currently making DEMO for it, you can check that project [here](../projects/2d_game.html).
 
   ![alt text](../assets/img/projects/T2DEngine/thumb.png)
 			*T2DEngine's Animation System*
