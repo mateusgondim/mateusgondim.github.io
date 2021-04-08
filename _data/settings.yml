@@ -40,23 +40,23 @@ disqus:
 
 about: >
   ## I Make Games
-    Hi! My name is Mateus Gondim Lima, and i'm a game programmer. 
+    Hi! My name is Mateus Gondim Lima and i'm a game programmer. 
     I am currently searching for job opportunities and can relocate on purpose.
-    In this website you can find all of my finished projects, and the ones i'm currently working on, a link
-    to my blog, where i write about game programming in general, my resume, and how to contact me.
+    In this website you can find all of my finished projects, the ones i'm currently working on,
+    a link to my blog -- where i write about game programming in general --, my resume
+    and how to contact me.
   
   # Technical Skills
     - Gameplay Programming.
     - Computer Graphics.
     - 3D Math, Linear Algebra.
-    - C/C++, C#, Lua, HLSL, GLSL, Haskell.
-    - Unity3D, Unreal Engine 4.
+    - C/C++, C#, Lua, GLSL, Haskell, JavaScript, Ruby.
+    - Unity3D.
 
   # Education
     I have acquired a bachelor's degree in Computer Science from [Universidade Federal da Bahia](http://www.ufba.br/) (2017).
   
-  # Resume
-    [resume.pdf](../assets/pdf/mateusgondim_resume.pdf)
+  # [Resume](../assets/pdf/mateus_gondim_resume.pdf)
 
 contact: >
   ## Contact
@@ -66,7 +66,7 @@ contact: >
 # Work Section
 
 projects:
-- {name: '2D Platformer game(untitled)', folder: '2d_game', file: 'projects/2d_game.html'}
+- {name: 'T2D DEMO', folder: '2d_game', file: 'projects/2d_game.html'}
 - {name: 'T2DEngine', folder: 'T2DEngine', file: 'projects/t2dengine.html'}
 #- {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
 #- {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
