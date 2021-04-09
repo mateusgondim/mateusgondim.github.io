@@ -66,6 +66,7 @@ contact: >
 # Work Section
 
 projects:
+- {name: 'Lux Renderer', folder: 'lux', file: 'projects/lux.html'}
 - {name: 'T2D DEMO', folder: '2d_game', file: 'projects/2d_game.html'}
 - {name: 'T2DEngine', folder: 'T2DEngine', file: 'projects/t2dengine.html'}
 #- {name: 'Project Three', folder: 'proj-3', file: 'projects/proj-3.html'}
