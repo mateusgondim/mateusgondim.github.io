@@ -26,10 +26,6 @@ It's simple but effective, displaying many of the Engine's most important featur
 
   OBS. The MacOS version will be added shortly! but you already can, as mentioned above, build it manually.
 
-#### Observation
-   The MacOs executable is a Unix executable, so it needs to be run from the terminal.
-   Just go the downloaded folder and type *./game*.
-
 #### Controls
   - Press Enter on the main menu to start the DEMO.
   - Use the arrow keys to move left, right, climb up and climb down.
